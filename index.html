@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>Movi<span>Est.</span></p>
+                <div class="watch">
+                    <a href="watchlist.html" style="color: yellowgreen;" class="header-link">My Watchlist</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title......." id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+                <div class="search-list" id="search-list">
+                    <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                           <img src="media-cover.jpg">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Justice League</h3>
+                            <p>2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="result-container">
+                    <div class="result-grid" id="result-grid">
+                        <div class="movie-poster">
+                            <img src="media-cover.jpg" alt="movie poster">
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Justice League</h3>
+                            <ul class="movie-misc-info">
+                                <li class="year">Year:2017</li>
+                                <li class="rated">Ratings:PG-13</li>
+                                <li class="released">Released:17 November 2017</li>
+                                <li><a href="#" class="btn" id="Butn" onclick="addToWatchlist()" style="display: inline;"><span><b>Add to Watchlist </b></span></a></li>
+                                <li><a href="#" class="btn1" id="Butn1" onclick="removeFromWatchlist()" style="display: none;"><span><b>Remove</b></span></a></li>
+                            </ul>
+                            <p class="genre"><b>Genre:</b>Action, Advanture, Comedy</p>
+                            <p class="writer"><b>Writer:</b>Jerry Siegnal, Joe Shuster, Chris Terrio</p>
+                            <p class="actors"><b>Actors:</b>Ben Affleck, Herry Cavil, Gal Gadot, Ecra Miller, Jason Momoa</p>
+                            <p class="plot"><b>Plot:</b>Fueled by his resord faith in humanity and inspired by Superman`s self less act, Bruce Wayne enlist the help of his new-found ally, Diana Prince, to face an even greater enemy. </p>
+                            <p class="language"><b>Language: </b>English</p>
+                            <p class="awards"><b><i class="fas fa-award"></i></b>Golden Schmoes Awards winner</p>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
